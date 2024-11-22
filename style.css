@@ -1,0 +1,198 @@
+/* Estilo base (desktop y tablets grandes) */
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    max-width: 1920px;
+    max-height: 1080;
+}
+
+@font-face {
+    font-family: "JostSemiBold";
+    src: url(fonts/static/Jost-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: "JostLight";
+    src: url(fonts/static/Jost-Light.ttf);
+}
+
+#body {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgb(168, 0, 0) 99%);
+    overflow-x: hidden;
+}
+
+#header {
+    display: flex;
+    justify-content: center;
+    margin-top: 4%;
+    position: relative;
+}
+
+.navBar {
+    display: inline-flex;
+    align-items: center;
+    gap: 88px;
+    font-family: JostLight;
+    font-size: 20px;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.navBar a {
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.navBar a:hover {
+    color: rgb(168, 0, 0);
+}
+
+#main-title {
+    font-family: JostSemiBold;
+    letter-spacing: -0.8px;
+    margin-top: 12%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.main-title {
+    font-size: 111px;
+    color: white;
+}
+
+.subtitle {
+    color: rgb(156, 156, 156);
+    margin-top: -1%;
+    font-size: 18px;
+}
+
+#social-media {
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+}
+
+.social-media {
+    display: inline-flex;
+    align-items: center;
+    gap: 50px;
+    font-family: JostLight;
+    font-size: 20px;
+    flex-wrap: wrap;
+}
+
+.social-media img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.social-media img:hover {
+    transform: scale(1.1);
+}
+
+#footer {
+    margin-top: 90px;
+    text-align: center;
+}
+
+#footer p {
+    color: white;
+    font-family: JostLight;
+    font-size: 16px;
+    margin-top: 5px;
+    margin-bottom: 25px;
+}
+
+/* Responsive para tablets */
+@media (max-width: 1024px) {
+    .main-title {
+        font-size: 80px;
+    }
+
+    .subtitle {
+        font-size: 16px;
+    }
+
+    .navBar {
+        gap: 40px;
+        font-size: 16px;
+    }
+
+    .social-media img {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+/* Responsive para pantallas medianas */
+@media (max-width: 768px) {
+    #header {
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+
+    .navBar {
+        display: none; /* Oculta el menú principal */
+    }
+
+    #header:after {
+        content: "☰"; /* Menú hamburguesa */
+        color: white;
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    .navBar.open {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.9);
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    .navBar.open a {
+        padding: 10px 0;
+    }
+
+    .social-media {
+        gap: 17px;
+    }
+
+    .social-media img {
+        width: 65px;
+        height: 65px;
+    }
+}
+
+/* Responsive para móviles */
+@media (max-width: 480px) {
+    .main-title {
+        font-size: 50px;
+    }
+
+    .subtitle {
+        font-size: 14px;
+    }
+
+    .social-media img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .navBar.open a {
+        font-size: 18px;
+    }
+}

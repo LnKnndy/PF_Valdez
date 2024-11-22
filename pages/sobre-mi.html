@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="../css/sobre-mi.css">
+    <title>Gastón Valdez | Sobre Mi</title>
+</head>
+<body id="body">
+    <header id="header">
+        <nav id="navBar">
+            <ol class="navBar">
+                <a href="../index.html"><li>INICIO</li></a>
+                <a href="#"><li>SOBRE MI</li></a>
+                <a href="trayectoria.html"><li>TRAYECTORIA</li></a>
+                <a href="proyectos.html"><li>PROYECTOS</li></a>
+                <a href="contacto.html"><li>CONTACTO</li></a>
+            </ol>
+        </nav>
+    </header>
+    <main id="main">
+        <section id="content">
+            <section id="about-me">
+                <h1>Sobre Mi</h1>
+                <div class="scrollable-text">
+                    <p>Nací un 22 de Octubre de 2003, crecí en la ciudad de Salta, Argentina, tengo 21 años y actualmente estoy atravesando mis estudios en la Ciudad Autónoma de Buenos Aires. Desde pequeño mis gustos musicales fueron influenciados por hits internacionales de los '80s y '90s, y me volví fanatico de los grandes clásicos del cine como Indiana Jones, Star Wars y Volver Al Futuro.</p>
+                    <p>Desde una edad temprana siempre me apasionó la música; mis principales pasatiempos eran cantar y bailar, especialmente las canciones de Michael Jackson. A medida que fui creciendo fui profundizando cada vez más en estos aspectos de mi vida, participé en multiples proyectos, tanto como solista y como colaborador.</p>
+                    <p>A lo largo de mi vida creé vinculos y contactos gracias a mi pasión por la música, esto me permitió crecer y desarrollarme como artista y como profesional. Tengo mucha experiencia en redes sociales y como intérprete, sesionista, productor, diseñador de portadas de disco, editor de video y compositor.</p>
+                </div>
+            </section>
+            <section id="image-gallery">
+                <div id="gallery">
+                    <button id="prev" onclick="changeImage(-1)">
+                        <img src="../images/about-me/prev-arrow.png" alt="Anterior">
+                    </button>
+                    <figure class="image">
+                        <img id="image-slide" src="../images/about-me/gallery/image-gallery-1.jpg" alt="img-1">
+                        <figcaption class="caption">Sir Of The Beer, Salta, Argentina, Enero de 2024</figcaption>
+                    </figure>
+                    <button id="next" onclick="changeImage(1)">
+                        <img src="../images/about-me/next-arrow.png" alt="Siguiente">
+                    </button>
+                </div>
+            </section>
+        </section>
+    </main>
+    <footer id="footer">
+        <p>&copy; 2024 Gastón Valdez. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

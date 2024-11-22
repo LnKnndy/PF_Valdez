@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/contacto.css">
+    <title>Gastón Valdez | Contacto</title>
+</head>
+<body id="body">
+    <header id="header">
+        <nav id="navBar">
+            <ol class="navBar">
+                <a href="../index.html"><li>INICIO</li></a>
+                <a href="sobre-mi.html"><li>SOBRE MI</li></a>
+                <a href="trayectoria.html"><li>TRAYECTORIA</li></a>
+                <a href="proyectos.html"><li>PROYECTOS</li></a>
+                <a href="contacto.html"><li>CONTACTO</li></a>
+            </ol>
+        </nav>
+    </header>
+
+    <main id="main">
+        <section id="contacto">
+            <h1>Contacto</h1>
+            <p>¿Tenés alguna consulta o propuesta? Completa el siguiente formulario y me pondré en contacto.</p>
+            
+            <form action="send-email" method="POST">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" placeholder="Tu correo" required>
+
+                <label for="phone">Número de teléfono:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Tu teléfono (opcional)">
+
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" placeholder="Escribe tu mensaje aquí..." rows="6" required></textarea>
+
+                <button type="submit">Enviar mensaje</button>
+            </form>
+        </section>
+    </main>
+
+    <footer id="footer">
+        <p>&copy; 2024 Gastón Valdez. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
