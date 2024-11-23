@@ -167,6 +167,8 @@ p {
     font-family: JostLightItalic;
     font-size: 17px;
     text-align: left;
+    margin-top: 10px;
+    margin-left: 5px;
 }
 
 #footer {
